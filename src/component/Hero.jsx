@@ -21,7 +21,10 @@ export default function Hero() {
   const currentFloatingCard = floatingCards[activeTab];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    >
       <div
         className="absolute inset-0 opacity-30 "
         style={{
@@ -130,10 +133,11 @@ export default function Hero() {
                       customStyle={{
                         margin: 0,
                         borderRadius: "8px",
-                        fontSize: "11px",
+                        fontSize: "0.75rem",
                         height: "100%",
                         border: "1px solid rgba(255, 255, 255, 0.1)",
                       }}
+                      wrapLines={true}
                     >
                       {codeExample[activeTab]}
                     </SyntaxHighlighter>

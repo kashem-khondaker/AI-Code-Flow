@@ -1,18 +1,15 @@
 export const codeExample = {
   "App.jsx": `
     
-    function App() {
-      return (
-        <div className="min-h-screen bg-slate-950 text-white overflow-hidden">
-          <Navbar />
-          <Hero />
-          <Features />
-          <Pricing />
-          <Testimonials />
-          <Footer />
-        </div>
-      );
-    }
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+          setMousePosition({ x: e.clientX, y: e.clientY });
+          console.log(mousePosition.x, mousePosition.y);
+        };
+    
+        window.addEventListener("mousemove", handleMouseMove);
+        return () => window.removeEventListener("mousemove", handleMouseMove);
+      }, []);
     `,
   "Hero.jsx": `
     
