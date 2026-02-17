@@ -30,6 +30,12 @@ export default function Navbar() {
             About
           </a>
           <a
+            href="#features"
+            className="text-gray-300 hover:text-green-500 transition"
+          >
+            Features
+          </a>
+          <a
             href="#services"
             className="text-gray-300 hover:text-green-500 transition"
           >
