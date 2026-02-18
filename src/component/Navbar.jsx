@@ -24,22 +24,22 @@ export default function Navbar() {
             Home
           </a>
           <a
-            href="#about"
-            className="text-gray-300 hover:text-green-500 transition"
-          >
-            About
-          </a>
-          <a
             href="#features"
             className="text-gray-300 hover:text-green-500 transition"
           >
             Features
           </a>
           <a
-            href="#services"
+            href="#pricing"
             className="text-gray-300 hover:text-green-500 transition"
           >
-            Services
+            Pricing
+          </a>
+          <a
+            href="#about"
+            className="text-gray-300 hover:text-green-500 transition"
+          >
+            About
           </a>
           <a
             href="#contact"
