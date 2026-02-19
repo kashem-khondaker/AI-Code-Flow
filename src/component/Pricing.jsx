@@ -1,4 +1,4 @@
-import { Check, Star } from "lucide-react";
+import { ArrowRight, Check, Star } from "lucide-react";
 
 const plans = [
   {
@@ -68,13 +68,14 @@ export default function Pricing() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <h2 className="text-5xl sm:text-4xl mb:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-              <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
-                Simple , Transparent
-              </span>{" "}
-              <br />
-              <span className="bg-gradient-to-b from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                Pricing Plans
-              </span>
+              <div className="leading-tight">
+                <span className="bg-gradient-to-b block space-y-0.5 from-white to-gray-300 bg-clip-text text-transparent">
+                  Simple , Transparent
+                </span>
+                <span className="bg-gradient-to-b block from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                  Pricing Plans
+                </span>
+              </div>
             </h2>
 
             <p className="text-gray-400 text-base text-xl sm:text-lg mx-w-2xl mx-auto">
@@ -89,6 +90,7 @@ export default function Pricing() {
                 key={key}
                 className={`relative bg-slate-900/50 backdrop-bluer-sm border rounded-xl sm:rounded-2xl p-5 sm:p-8 transition-all duration-300 overflow-visible group flex flex-col h-full ${plan.mostPopular ? "border-blue-500 shadow-2xl shadow-blue-500/20 lg:scale-105 hover:scale-106" : "border-white/20 shadow shadow-white/10 hover:shadow-white/30 hover:scale-101"}`}
               >
+                {/* <div className={`absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 duration-500 transform -translate-x-full -translate-y-full group-hover:translate-y-0 pointer-events-none rounded-lg`}></div> */}
                 {plan.mostPopular && (
                   <div className="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2 z-10">
                     <div className="flex items-center space-x-1 px-3 sm:px-4 py-1 sm:py-1.5 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full text-xs sm:text-sm font-semibold shadow-lg">
@@ -117,6 +119,7 @@ export default function Pricing() {
                     </span>
                   </div>
                 </div>
+
                 <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8  flex-row">
                   {plan.features.map((feature, fKey) => (
                     <li
@@ -125,14 +128,38 @@ export default function Pricing() {
                     >
                       <div className="flex-shrink-0 w-4 h-4 sm:w-5 sm:h-5 bg-blue-500/20 rounded-full flex items-center justify-center mt-0.5">
                         {" "}
-                        <Check  className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-blue-400"/>{" "}
+                        <Check className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-blue-400" />{" "}
                       </div>{" "}
-                      <span className="text-gray-300 text-sm sm:text-base"> {feature} </span>
+                      <span className="text-gray-300 text-sm sm:text-base">
+                        {" "}
+                        {feature}{" "}
+                      </span>
                     </li>
                   ))}
                 </ul>
+
+                <button
+                  className={`mt-auto group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 flex items-center justify-center space-x-2
+               ${
+                 plan.mostPopular
+                   ? "bg-gradient-to-b from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600"
+                   : "bg-gradient-to-b from-gray-700 to-gray-600 hover:from-gray-800 hover:to-gray-700"
+               }`}
+                >
+                  <span>Get Started</span>
+                </button>
               </div>
             ))}
+          </div>
+
+          <div className="mt-16 sm:mt-20 text-center">
+            <p className="text-gray-400 text-base text-xl">
+              Need a Custom plan ?{" "}
+              <a href="#" className="text-blue-400 hover:text-blue-300">
+                {" "}
+                Contact Us
+              </a>{" "}
+            </p>
           </div>
         </div>
       </>

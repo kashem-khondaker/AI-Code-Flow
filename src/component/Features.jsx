@@ -77,14 +77,15 @@ export default function Features() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h2 className="text-5xl sm:text-4xl mb:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-            <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
-              Your Complete Development Experience
-            </span>{" "}
-            <br />
-            <span className="bg-gradient-to-b from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              {" "}
-              WorkFlow{" "}
-            </span>
+            <div className="leading-tight">
+              <span className="block bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
+                Your Complete Development Experience
+              </span>
+
+              <span className="block bg-gradient-to-b from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                WorkFlow
+              </span>
+            </div>
           </h2>
         </div>
 
@@ -96,10 +97,10 @@ export default function Features() {
             >
               {/* code section  */}
               <>
-                  {/* ide interface */}
+                {/* ide interface */}
                 <div className="flex-1 w-full">
                   <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-xl sm:rounded-2xl transition-all duration-500 shadow-sm shadow-white/70 animate-pulse blur-sm"/>
+                    <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-xl sm:rounded-2xl transition-all duration-500 shadow-sm shadow-white/70 animate-pulse blur-sm" />
                     <div className="relative bg-white/6 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-white/10">
                       <div className="bg-gray-950 rounded-lg font-fomo px-2 sm:px-3 py-3 sm:py-4 text-xs sm:text-sm">
                         <div className="flex  items-center space-x-1 mb-2 ms:mb-3 sm:space-x-2 px-1 sm:px-2">
