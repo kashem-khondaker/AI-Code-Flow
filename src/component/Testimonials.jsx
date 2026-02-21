@@ -33,7 +33,7 @@ export default function Testimonials() {
   return (
     <section
       id="about"
-      className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative border-t border-white/20 mt-20"
+      className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative border-t border-white/20 mt-20 min-h-screen"
     >
       <>
         <div className="max-w-7xl mx-auto">
