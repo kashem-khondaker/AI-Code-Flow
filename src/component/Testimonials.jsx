@@ -44,7 +44,9 @@ export default function Testimonials() {
                 What developers are saying about our product
               </h2>
 
-              <p className="text-gray-400 text-base text-xl sm:text-lg mx-w-2xl mx-auto">
+              <p className="text-gray-400 text-base text-xl sm:text-lg mx-w-2xl mx-auto py-4 sm:py-6 lg:py-8 mt-2">
+                Our product has received rave reviews from developers around the
+                world. Here are just a few of the testimonials we've received:
                 Our product has received rave reviews from developers around the
                 world. Here are just a few of the testimonials we've received:
               </p>
